@@ -17,12 +17,17 @@ body{
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container header{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 2em;
     text-transform: uppercase;
     color: blueviolet;
     font-weight: bold;
@@ -40,4 +45,85 @@ body{
     border-left-style: none;
     border-right-style: none;
     color: lightgray;
+}
+.container section#customerTitle{
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+}
+.container section#customerTitle .customerTitleContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: blueviolet;
+    color: #fff;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container section#customerTitle .customerTitleContent p{
+    font-weight: 100;
+    font-size: .75rem;
+}
+.container section#customerTitle .customerTitleContent h1{
+    font-weight: bold;
+    font-size: 4em;
+}
+section.cardContainer{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+section.cardContainer .card{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+section.cardContainer .card button{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: .625rem;
+}
+section.cardContainer .card:hover{
+    transform: scale(1.1) rotate(360deg);
+}
+section.cardContainer .card h4{
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: blueviolet;
+    padding: 1rem;
+    border-start-end-radius: 1rem;
+    border-start-start-radius: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: #fff;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+section.cardContainer .card:hover h4{
+    display: block;
 }
